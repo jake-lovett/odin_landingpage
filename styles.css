@@ -42,7 +42,7 @@ h2 {
 }
 
 .hero {
-    display: inline-flex;
+    display: flex;
     padding: 48px;
     flex-wrap: nowrap;
     color: white; 
