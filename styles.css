@@ -3,13 +3,12 @@
     font-size: 18px; 
     color: white; 
     background-color: #white; 
+    margin: 0;
 }
 
 img {
-  width: 100px;
-  height: 100px;
-  border: 1px solid blue;
-
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -46,7 +45,8 @@ h2 {
     padding: 48px;
     flex-wrap: nowrap;
     color: white; 
-    background-color: #1f2937; 
+    background-color: #1f2937;
+    gap: 12px;
 }
 
 .intro {
@@ -57,6 +57,7 @@ h2 {
     flex-basis: 0;
     color: white; 
     background-color: #1f2937; 
+    gap: 18px;    
 }
 
 .signup {
@@ -66,11 +67,9 @@ h2 {
     background-color: #3882f6;
     border: 0px solid #fff;
     border-radius: 5px
-
 }
 
 .container {
-    border: 1px solid #fff;
     margin-left: 18px;
     flex-grow: 1;
     flex-shrink: 1;
@@ -79,28 +78,42 @@ h2 {
     align-items: center;
     color: white; 
     background-color: #1f2937; 
+    object-fit: cover;
 }
 
 .info {
-    background-color: white;
-    color: black
-    display: inline-flex;
-    padding: 48px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
+    background-color: white;
+    color: black;
+    padding: 48px;
 }
 
-.imgs {
+.small {
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue; border-radius: 10px;
+}
+
+.info > div > .small {
+  flex: 1 1 100px;
+  object-fit: cover;
+}
+
+.images {
   display: flex;
   justify-content: space-around;
-  gap: 16px;
+  gap: 24px;
   padding-bottom: 16px;
+  padding-top: 24px;
   background-color: white;
 }
 
 .captions {
     display: flex;
     justify-content: space-around;
-    gap: 16px;
+    gap: 24px;
     padding-bottom: 16px;
     background-color: white;
 }
@@ -127,9 +140,7 @@ h2 {
     align-items: center;
     background-color: #3882f6;
     margin: 68px;
-    padding-left: 64px;
-    padding-right: 64px;
-    padding-bottom: 10px; 
+    padding: 18px 64px 18px 64px;
     border-radius: 5px
 
 }
